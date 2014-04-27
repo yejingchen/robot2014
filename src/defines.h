@@ -16,20 +16,21 @@
 #define IR_OUT_BELOW_LEFT 2
 #define IR_SENSOR_BELOW_LEFT 5
 
-// test only
+// 红外传感器、红外发射管
+// <<< 需要实际接线！
+  #define IR_SENSOR_BELOW_LEFT 2
   #define IR_SENSOR_BELOW_RIGHT 2
-  #define IR_SENSOR_BELOW_LEFT
-  #define IR_SENSOR_FRONT 2
   #define IR_SENSOR_LEFT 2
   #define IR_SENSOR_RIGHT 2
+  #define IR_SENSOR_FRONT 2
   #define IR_SENSOR_BACK 2
 
   #define IR_OUT_BELOW_LEFT 2
   #define IR_OUT_BELOW_RIGHT 2
-  #define IR_OUT_FRONT 2
-  #define IR_OUT_BACK 2
   #define IR_OUT_LEFT 2
   #define IR_OUT_RIGHT 2
+  #define IR_OUT_FRONT 2
+  #define IR_OUT_BACK 2
 
 #define SENSOR IR_SENSOR_BELOW_LEFT // 用于 collect_IR_data ()
 
@@ -45,4 +46,5 @@
 #define IR_FRONT_CLOSE	100	// <<< 需要测试！
 #define IR_LEFT_CLOSE	100	// <<< 需要测试！
 #define IR_LEFT_FAR	100	// <<< 需要测试！
-
+#define IR_RIGHT_FAR	100	// <<< 需要测试！
+#define IR_RIGHT_CLOSE	100	// <<< 需要测试!

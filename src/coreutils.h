@@ -73,6 +73,8 @@ unsigned int IR_sensor_below_2;
 
 void collect_IR_data (void)
 {
+	digitalWrite (IR_OUT_BELOW_LEFT, LOW); // 关闭红外以便收集环境光数据
+	digitalWrite (IR_OUT_BELOW_RIGHT, LOW);
 	// 收集环境光
 	IR_sensor_below_1 = analogRead (SENSOR);
 	Serial.println ("===================================================");

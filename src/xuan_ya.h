@@ -1,9 +1,9 @@
 /*
- * xuan_ya_le_ma.h
+ * xuan_ya.h
  * robot2014 项目的悬崖勒马模式，在悬崖前刹车。施工中
  */
 
-void xuan_ya_le_ma (void)
+void xuan_ya (void)
 {
 	if (analogRead (SENSOR) < IR_BELOW_MAX)
 	{

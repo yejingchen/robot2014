@@ -14,9 +14,10 @@
 
 #define LIMIT_DELTA 100	// <<< 需要测试！
 
-int state;
+int nei_state;
 int tempRightData;
 bool in_garage = false;
+bool nei_state_set = false;
 
 int nei_huan_detect_state (void)	// 检测当前状态
 {
@@ -32,8 +33,10 @@ int nei_huan_detect_state (void)	// 检测当前状态
 		else if (analogRead (IR_SENSOR_RIGHT) > IR_RIGHT_FAR)
 			// 离右挡板太远，或者已到达车库
 		{
-			if (analogRead (IR_SENSOR_RIGHT) - tempRightData < LIMIT_DELTA)
-				// 前后两次检测变化不大，即视为偏离车道，调整车头
+			if (analogRead (IR_SENSOR_RIGHT) - tempRightData 
+					< LIMIT_DELTA)
+				// 前后两次检测变化不大，即视为偏离车道
+				// 调整车头
 				return S_TURN_RIGHT;
 			else 
 				// 否则，即是已到达车库，准备倒车入库
@@ -53,9 +56,10 @@ int nei_huan_detect_state (void)	// 检测当前状态
 
 void nei_huan (void)
 {
-	state = nei_huan_detect_state ();
+	if (nei_state_set) nei_state_set = false;
+	else nei_state = nei_huan_detect_state ();
 
-	switch (state)
+	switch (nei_state)
 	{
 		case S_FORWARD:
 			motor (LEFT, FORWARD, NORMAL_SPEED);	// 控制车直行
@@ -69,13 +73,15 @@ void nei_huan (void)
 			motor (LEFT, FORWARD, HALF_SPEED);	// 掉转车头向左
 			motor (RIGHT, FORWARD, NORMAL_SPEED);
 			delay (618);	// <<< 需要测试！
-			state = S_FORWARD;
+			nei_state = S_FORWARD;
+			nei_state_set = true;
 			break;
 		case S_TURN_RIGHT:
 			motor (LEFT, FORWARD, NORMAL_SPEED);	// 掉转车头向右
 			motor (RIGHT, FORWARD, HALF_SPEED);
 			delay (618);	// <<< 需要测试！
-			state = S_FORWARD;
+			nei_state = S_FORWARD;
+			nei_state_set = true;
 			break;
 		case S_GARAGE:
 			delay (600);	// 准备入库，掉转车头
