@@ -4,12 +4,6 @@
  * 以及核心函数用到的状态名
  */
 
-#define WAI_HUAN 1
-#define NEI_HUAN 2
-#define CHAO_CHE 3
-#define XUAN_YA_LE_MA 4
-#define FU_JIA_TI 5
-
 #define LED 13
 
 // 左轮和右轮
@@ -23,11 +17,15 @@
 #define IR_SENSOR_BELOW_LEFT 5
 
 // test only
-  #define IR_OUT_BELOW_RIGHT 2
   #define IR_SENSOR_BELOW_RIGHT 2
+  #define IR_SENSOR_BELOW_LEFT
   #define IR_SENSOR_FRONT 2
   #define IR_SENSOR_LEFT 2
+  #define IR_SENSOR_RIGHT 2
+  #define IR_SENSOR_BACK 2
 
+  #define IR_OUT_BELOW_LEFT 2
+  #define IR_OUT_BELOW_RIGHT 2
   #define IR_OUT_FRONT 2
   #define IR_OUT_BACK 2
   #define IR_OUT_LEFT 2

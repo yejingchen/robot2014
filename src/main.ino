@@ -8,18 +8,12 @@
 #include "defines.h"
 #include "coreutils.h"
 
-// 模式：可用值有	WAI_HUAN	NEI_HUAN	CHAO_CHE
-//			（外环）	（内环）	（超车）
-//			XUAN_YA_LE_MA	FU_JIA_TI
-//			（悬崖勒马）	（附加题）
-// 各功能尚在开发中
-#define MODE WAI_HUAN
-
 #include "wai_huan.h"
 #include "nei_huan.h"
 #include "chao_che.h"
 #include "xuan_ya_le_ma.h"
 #include "fu_jia_ti.h"
+#include "zi_ge_sai.h"
 
 void setup (void)
 {
@@ -53,6 +47,13 @@ void setup (void)
 	// 检查电机是否工作正常，在正式比赛时需移除
 	// motor_test ();
 }
+
+// 设置模式：在 loop () 内调用下列函数之一，即可完成相应功能
+// chao_che ()		超车
+// xuan_ya_le_ma ()	悬崖勒马
+// wai_huan ()		外环
+// nei_huan ()		内环
+// fu_jia_ti ()		附加题
 
 void loop (void)
 {

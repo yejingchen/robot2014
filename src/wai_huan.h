@@ -53,4 +53,5 @@ void wai_huan (void)
 			break;
 		default:
 			break;
+	}
 }
