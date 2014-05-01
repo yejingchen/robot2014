@@ -1,0 +1,77 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BACK	src/defines.h	38;"	d
+FORWARD	src/defines.h	37;"	d
+HALF_SPEED	src/defines.h	42;"	d
+IR_BELOW_MAX	src/defines.h	44;"	d
+IR_FRONT_CLOSE	src/defines.h	46;"	d
+IR_LEFT_CLOSE	src/defines.h	47;"	d
+IR_LEFT_FAR	src/defines.h	48;"	d
+IR_OUT_BACK	src/defines.h	33;"	d
+IR_OUT_BELOW_LEFT	src/defines.h	16;"	d
+IR_OUT_BELOW_LEFT	src/defines.h	28;"	d
+IR_OUT_BELOW_RIGHT	src/defines.h	29;"	d
+IR_OUT_FRONT	src/defines.h	32;"	d
+IR_OUT_LEFT	src/defines.h	30;"	d
+IR_OUT_RIGHT	src/defines.h	31;"	d
+IR_RIGHT_CLOSE	src/defines.h	50;"	d
+IR_RIGHT_FAR	src/defines.h	49;"	d
+IR_SENSOR_BACK	src/defines.h	26;"	d
+IR_SENSOR_BELOW_LEFT	src/defines.h	17;"	d
+IR_SENSOR_BELOW_LEFT	src/defines.h	21;"	d
+IR_SENSOR_BELOW_RIGHT	src/defines.h	22;"	d
+IR_SENSOR_FRONT	src/defines.h	25;"	d
+IR_SENSOR_LEFT	src/defines.h	23;"	d
+IR_SENSOR_RIGHT	src/defines.h	24;"	d
+IR_sensor_below_1	src/coreutils.h	/^unsigned int IR_sensor_below_1;	\/\/ 在 collect_IR_data () 中被使用$/;"	v
+IR_sensor_below_2	src/coreutils.h	/^unsigned int IR_sensor_below_2;$/;"	v
+LED	src/defines.h	7;"	d
+LED_flash	src/coreutils.h	/^void LED_flash (void)$/;"	f
+LED_on	src/coreutils.h	/^boolean LED_on = true;$/;"	v
+LEFT	src/defines.h	39;"	d
+LIMIT_DELTA	src/nei_huan.h	15;"	d
+ML_DIR	src/defines.h	10;"	d
+ML_SPEED	src/defines.h	12;"	d
+MR_DIR	src/defines.h	11;"	d
+MR_SPEED	src/defines.h	13;"	d
+NORMAL_SPEED	src/defines.h	41;"	d
+RIGHT	src/defines.h	40;"	d
+SENSOR	src/defines.h	35;"	d
+S_BACK	src/nei_huan.h	13;"	d
+S_FORWARD	src/nei_huan.h	8;"	d
+S_FORWARD	src/wai_huan.h	7;"	d
+S_FORWARD	src/zi_ge.h	7;"	d
+S_GARAGE	src/nei_huan.h	12;"	d
+S_STOP	src/nei_huan.h	9;"	d
+S_STOP	src/wai_huan.h	8;"	d
+S_STOP	src/zi_ge.h	8;"	d
+S_TURN_LEFT	src/nei_huan.h	10;"	d
+S_TURN_LEFT	src/wai_huan.h	9;"	d
+S_TURN_LEFT	src/zi_ge.h	9;"	d
+S_TURN_RIGHT	src/nei_huan.h	11;"	d
+S_TURN_RIGHT	src/wai_huan.h	10;"	d
+S_TURN_RIGHT	src/zi_ge.h	10;"	d
+collect_IR_data	src/coreutils.h	/^void collect_IR_data (void)$/;"	f
+in_garage	src/nei_huan.h	/^bool in_garage = false;$/;"	v
+loop	.build/atmega8/src/main.cpp	/^void loop (void)$/;"	f
+motor	src/coreutils.h	/^void motor (int side, int dir, int speed)$/;"	f
+motor_test	src/coreutils.h	/^void motor_test (void)$/;"	f
+nei_huan	src/nei_huan.h	/^void nei_huan (void)$/;"	f
+nei_huan_detect_state	src/nei_huan.h	/^int nei_huan_detect_state (void)	\/\/ 检测当前状态$/;"	f
+nei_state	src/nei_huan.h	/^int nei_state;$/;"	v
+nei_state_set	src/nei_huan.h	/^bool nei_state_set = false;$/;"	v
+setup	.build/atmega8/src/main.cpp	/^void setup (void)$/;"	f
+tempRightData	src/nei_huan.h	/^int tempRightData;$/;"	v
+wai_huan	src/wai_huan.h	/^void wai_huan (void)$/;"	f
+wai_huan_detect_state	src/wai_huan.h	/^int wai_huan_detect_state (void)	\/\/ 检测当前状态$/;"	f
+wai_state	src/wai_huan.h	/^int wai_state;$/;"	v
+wai_state_set	src/wai_huan.h	/^bool wai_state_set = false;$/;"	v
+xuan_ya	src/xuan_ya.h	/^void xuan_ya (void)$/;"	f
+zi_ge	src/zi_ge.h	/^void zi_ge (void)$/;"	f
+zi_ge_detect_state	src/zi_ge.h	/^int zi_ge_detect_state (void)	\/\/ 检测当前状态$/;"	f
+zi_state	src/zi_ge.h	/^int zi_state;$/;"	v
+zi_state_set	src/zi_ge.h	/^bool zi_state_set = false;$/;"	v
